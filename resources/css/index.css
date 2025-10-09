@@ -4,43 +4,39 @@
 }
 
 body {
-    background-color: var(--background-fade-color);
+    background-color: var(--background-color);
 
     height: 100vh;
+
 }
 
 /* Variables */
 :root {
-    --background-fade-color: #010101;
+    --background-color: black;
     --main-text-color: #E8DADA;
 }
 
 /* Page Sizing */
 .main-content {
     width: 100%;
-    
-
-    /* min-width: 1000px; */
 }
 
 /* Landing Page Styles */
-
 .jumbotron {
-    background-image: url("https://raw.githubusercontent.com/kalakal-dev/bothy-blend/refs/heads/main/resources/images/whiskybarrels.jpeg");
+    /* background-image: linear-gradient(to top, black 0%, rgba(0,0,0,25%) 50%), url("https://raw.githubusercontent.com/kalakal-dev/bothy-blend/refs/heads/main/resources/images/whiskybarrels.jpeg"); */
+    background-image: linear-gradient(to top, black 0%, rgba(0,0,0,15%) 50%), url("/Users/Jack/Repositories/Web/bothy-blend/bothy-blend/resources/images/bothy.jpg");
     background-size: cover;
-    background-repeat: repeat, no-repeat;
+    background-repeat: no-repeat;
     background-position: center center;
 
-    /* width: 100vw; */
     height: 100vh;
+
+    display: flex;
+    align-items: center;
 }
 
 .landing-page-container {
     width: 100%;
-    height: 100%;
-
-    position: relative;
-    top: 7.5%;
 
     display: flex;
     flex-direction: column;
@@ -56,31 +52,63 @@ body {
 .title-container {
     color: var(--main-text-color);
 
-    border: thin solid var(--main-text-color);
-    background-color: rgba(0, 0, 0, 75%)
+    /* border: thin solid var(--main-text-color); */
+    background-color: rgba(0, 0, 0, 65%)
 }
 
 #main-title {
     font-family: 'Tilt Prism', serif;
-    font-size: 8vw;
+    font-size: 90px;
     text-transform: uppercase;
     text-align: center;
 
-    padding: 2vh 12vw;
-    border-radius: 6vw;
+    border: medium solid var(--main-text-color);
+
+    margin: 0px 50px;
+    padding: 15px 25px;
+    border-radius: 25px;
 }
 
 #main-subtitle {
-    font-family: 'Shrikhand', serif;
-    font-size: 2vw;
+    font-family: 'Federo', serif;
+    font-size: 18px;
+    text-transform: uppercase;
     text-align: center;
 
-    padding: 1vh 6vw;
-    border-radius: 3vw;
+    padding: 15px;
+    border-radius: 10px;
 }
 
 /* Button Styles */
+.order-button {
+    background-color: rgba(0, 0, 0, 0%);
+    color: var(--main-text-color);
 
-/* .order-button {
+    font-family: 'Federo', serif;
+    font-size: 18px;
+    text-transform: uppercase;
 
-} */
+    border: medium solid var(--main-text-color);
+    border-radius: 50px;
+    padding: 15px 25px;
+
+    transition: background-color 0.15s;
+}
+
+.order-button:hover {
+    background-color: var(--main-text-color) !important;
+    color: var(--background-color);
+
+    
+
+    border: medium solid var(--background-color);
+}
+
+.order-button:active {
+    background-color: rgba(115, 115, 115, 50%) !important;
+    color: var(--main-text-color);
+
+    border: medium solid var(--background-color);
+
+    /* margin: 1.7rem 0px; */
+}
