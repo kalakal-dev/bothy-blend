@@ -1,0 +1,27 @@
+/* Universal Styles */
+* {
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --background-fade-colour: #010101;
+}
+
+.main-content {
+    background-color: var(--background-fade-colour);
+    width: 100%;
+    height: 1200px;
+
+    min-width: 1000px;
+}
+
+/* Landing Page Styles */
+
+.jumbotron {
+    background-image: url("C:/Users/Jack/Documents/1. Repositories/0. Jack Aldred/_HTML/bothy-blend/resources/images/whiskybarrels.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+    height: 100%;
+}
