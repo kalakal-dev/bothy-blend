@@ -28,7 +28,7 @@ body {
 .jumbotron {
     background-image: url("https://raw.githubusercontent.com/kalakal-dev/bothy-blend/refs/heads/main/resources/images/whiskybarrels.jpeg");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat, no-repeat;
     background-position: center center;
 
     /* width: 100vw; */
@@ -40,7 +40,7 @@ body {
     height: 100%;
 
     position: relative;
-    top: 200px;
+    top: 7.5%;
 
     display: flex;
     flex-direction: column;
@@ -50,7 +50,7 @@ body {
 
 /* Space all children evenly */
 .landing-page-container > * {
-    margin: 25px 0px;
+    margin: 1.5rem 0px;
 }
 
 .title-container {
@@ -62,21 +62,21 @@ body {
 
 #main-title {
     font-family: 'Tilt Prism', serif;
-    font-size: 120px;
+    font-size: 8vw;
     text-transform: uppercase;
     text-align: center;
 
-    padding: 25px 100px;
-    border-radius: 50px;
+    padding: 2vh 12vw;
+    border-radius: 6vw;
 }
 
 #main-subtitle {
     font-family: 'Shrikhand', serif;
-    font-size: 24px;
+    font-size: 2vw;
     text-align: center;
 
-    padding: 25px 50px;
-    border-radius: 25px;
+    padding: 1vh 6vw;
+    border-radius: 3vw;
 }
 
 /* Button Styles */
