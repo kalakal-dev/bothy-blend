@@ -3,13 +3,10 @@
     box-sizing: border-box;
 }
 
-h1,
-h2 {
-    color: white;
-}
-
 body {
     background-color: var(--background-fade-color);
+
+    height: 100vh;
 }
 
 /* Variables */
@@ -18,21 +15,24 @@ body {
     --main-text-color: #E8DADA;
 }
 
+/* Page Sizing */
 .main-content {
     width: 100%;
-    height: 1200px;
+    
 
-    min-width: 1000px;
+    /* min-width: 1000px; */
 }
 
 /* Landing Page Styles */
 
 .jumbotron {
     background-image: url("https://raw.githubusercontent.com/kalakal-dev/bothy-blend/refs/heads/main/resources/images/whiskybarrels.jpeg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
 
-    height: 100%;
+    /* width: 100vw; */
+    height: 100vh;
 }
 
 .landing-page-container {
@@ -81,6 +81,6 @@ body {
 
 /* Button Styles */
 
-.order-button {
-    
-}
+/* .order-button {
+
+} */
