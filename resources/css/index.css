@@ -3,13 +3,22 @@
     box-sizing: border-box;
 }
 
+h1,
+h2 {
+    color: white;
+}
+
+body {
+    background-color: var(--background-fade-color);
+}
+
 /* Variables */
 :root {
-    --background-fade-colour: #010101;
+    --background-fade-color: #010101;
+    --main-text-color: #E8DADA;
 }
 
 .main-content {
-    background-color: var(--background-fade-colour);
     width: 100%;
     height: 1200px;
 
@@ -22,6 +31,56 @@
     background-image: url("https://raw.githubusercontent.com/kalakal-dev/bothy-blend/refs/heads/main/resources/images/whiskybarrels.jpeg");
     background-size: 100%;
     background-repeat: no-repeat;
-    
+
     height: 100%;
+}
+
+.landing-page-container {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    top: 200px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* Space all children evenly */
+.landing-page-container > * {
+    margin: 25px 0px;
+}
+
+.title-container {
+    color: var(--main-text-color);
+
+    border: thin solid var(--main-text-color);
+    background-color: rgba(0, 0, 0, 75%)
+}
+
+#main-title {
+    font-family: 'Tilt Prism', serif;
+    font-size: 120px;
+    text-transform: uppercase;
+    text-align: center;
+
+    padding: 25px 100px;
+    border-radius: 50px;
+}
+
+#main-subtitle {
+    font-family: 'Shrikhand', serif;
+    font-size: 24px;
+    text-align: center;
+
+    padding: 25px 50px;
+    border-radius: 25px;
+}
+
+/* Button Styles */
+
+.order-button {
+    
 }
