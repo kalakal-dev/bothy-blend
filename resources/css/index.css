@@ -56,7 +56,7 @@ body {
     background-color: rgba(0, 0, 0, 65%)
 }
 
-#main-title {
+#landing-page-main-title {
     font-family: 'Tilt Prism', serif;
     font-size: 90px;
     text-transform: uppercase;
@@ -69,7 +69,7 @@ body {
     border-radius: 25px;
 }
 
-#main-subtitle {
+#landing-page-main-subtitle {
     font-family: 'Federo', serif;
     font-size: 18px;
     text-transform: uppercase;
