@@ -141,7 +141,7 @@ body {
 
 /* Generic Page Styles */
 .full-page-background-image {
-    background-size: cover;
+    /* background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
@@ -149,7 +149,32 @@ body {
     position: absolute;
     width: 100vw;
 
-    z-index: -100;
+    z-index: -100; */
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: -1;
+}
+
+body#landingpage::before {
+    background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 25%) 50%), url("https://raw.githubusercontent.com/kalakal-dev/bothy-blend/refs/heads/main/resources/images/bothy.jpg");
+}
+
+body#aboutus::before {
+    background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 25%) 50%), url("https://raw.githubusercontent.com/kalakal-dev/bothy-blend/refs/heads/main/resources/images/landscape_filter.jpg");
+}
+
+body#order::before {
+    background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 25%) 50%), url("https://raw.githubusercontent.com/kalakal-dev/bothy-blend/refs/heads/main/resources/images/coppertanks.jpg");
 }
 
 .main-content {
@@ -219,7 +244,7 @@ body {
 
 /* Landing Page Styles */
 #landing-page-background-image {
-    background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 15%) 50%), url("https://raw.githubusercontent.com/kalakal-dev/bothy-blend/refs/heads/main/resources/images/bothy.jpg");
+    /* background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 15%) 50%), url("https://raw.githubusercontent.com/kalakal-dev/bothy-blend/refs/heads/main/resources/images/bothy.jpg"); */
 }
 
 #landing-page-main-content {
@@ -272,7 +297,7 @@ body {
 
 /* About Us Page Styling */
 #about-us-background-image {
-    background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 15%) 50%), url("https://raw.githubusercontent.com/kalakal-dev/bothy-blend/refs/heads/main/resources/images/landscape_filter.jpg");
+    /* background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 15%) 50%), url("https://raw.githubusercontent.com/kalakal-dev/bothy-blend/refs/heads/main/resources/images/landscape_filter.jpg"); */
 }
 
 #about-us-main-content {
@@ -281,7 +306,7 @@ body {
 
 /* Order Page Styling */
 #order-background-image {
-    background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 25%) 50%), url("https://raw.githubusercontent.com/kalakal-dev/bothy-blend/refs/heads/main/resources/images/coppertanks.jpg");
+    /* background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 25%) 50%), url("https://raw.githubusercontent.com/kalakal-dev/bothy-blend/refs/heads/main/resources/images/coppertanks.jpg"); */
 }
 
 #order-main-content {
@@ -328,7 +353,7 @@ body {
 
     background-color: orange;
     color: black;
-    
+
     margin: 10px 0px;
     padding: 0px 15px;
 
@@ -344,9 +369,7 @@ body {
     transition: background-color 0.1s;
 }
 
-.order-box-container a:visited {
-
-}
+.order-box-container a:visited {}
 
 .order-box-container a:hover {
     background-color: orangered;
