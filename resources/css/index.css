@@ -1,3 +1,15 @@
+/* Variables */
+:root {
+    --background-color: black;
+    --main-text-color: #E8DADA;
+    --transparent-box-color: rgba(0, 0, 0, 65%);
+    --light-transparent-box-color: rgba(0, 0, 0, 35%);
+
+    --logo-font: 'Tilt Prism', serif;
+    --main-body-font: 'Federo', serif;
+    --subtitle-font: 'Shrikhand', serif;
+}
+
 /* Universal Styles */
 * {
     box-sizing: border-box;
@@ -5,40 +17,11 @@
 
 body {
     background-color: var(--background-color);
-
-    height: 100%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-/* Variables */
-:root {
-    --background-color: black;
-    --main-text-color: #E8DADA;
-    --transparent-box-color: rgba(0, 0, 0, 65%);
-
-    --logo-font: 'Tilt Prism', serif;
-    --main-body-font: 'Federo', serif;
-    --subtitle-font: 'Shrikhand', serif;
-}
-
-/* Page Sizing */
-.main-content {
-    width: 100vw;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    border: thin solid red !important;
 }
 
 /* Nav Header Styling */
 .nav-bar-offset {
-    position: relative;
-    top: 120px;
+    padding: 150px 0px 0px 0px;
 }
 
 .nav-header {
@@ -84,7 +67,7 @@ body {
     font-size: 18px;
     text-transform: uppercase;
 
-    margin: 10px;
+    margin: 5px;
 }
 
 /* Button Styles */
@@ -157,6 +140,14 @@ body {
 }
 
 /* Generic Page Styles */
+.full-page-background-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    z-index: -100;
+}
 
 .page-main-title {
     margin: 12px 0px;
@@ -166,44 +157,67 @@ body {
     color: var(--main-text-color);
 
     font-family: var(--subtitle-font);
-    font-size: 24px;
+    font-size: 40px;
     text-transform: uppercase;
     text-align: center;
 }
 
 .body-text {
-    background-color: var(--transparent-box-color);
+    color: var(--main-text-color);
+    background-color: var(--light-transparent-box-color);
+
+    font-family: var(--main-body-font);
+    font-size: 24px;
+    line-height: 36px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    min-height: 450px;
+    margin: 24px 24px 0px 24px;
+    padding: 30px;
+}
+
+.body-text p {
+    margin-bottom: 36px;
+}
+
+.body-text-justified {
+    text-align: justify;
+}
+
+.body-text-justified strong {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.body-text-emphasis {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 56px;
+    line-height: 110%;
+}
+
+.body-text-center {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Landing Page Styles */
+#landing-page-background-image {
+    background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 15%) 50%), url("https://raw.githubusercontent.com/kalakal-dev/bothy-blend/refs/heads/main/resources/images/bothy.jpg");
+}
+
+#landing-page-main-content {
+    width: 100vw;
+    height: 100vh;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    padding: 30px;
-    margin: 24px 24px;
-}
-
-.body-text p {
-    color: var(--main-text-color);
-
-    font-family: var(--main-body-font);
-    font-size: 30px;
-    line-height: 36px;
-
-    text-align: center;
-    margin-bottom: 24px;
-}
-
-/* Landing Page Styles */
-.landing-page-background-image {
-    /* background-image: linear-gradient(to top, black 0%, rgba(0,0,0,25%) 50%), url("https://raw.githubusercontent.com/kalakal-dev/bothy-blend/refs/heads/main/resources/images/whiskybarrels.jpeg"); */
-    background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 15%) 50%), url("https://raw.githubusercontent.com/kalakal-dev/bothy-blend/refs/heads/main/resources/images/bothy.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-
-    position: absolute;
-    z-index: -100;
 }
 
 .landing-page-container {
@@ -213,7 +227,6 @@ body {
     justify-content: space-evenly;
 }
 
-/* Space all children evenly */
 .landing-page-container>* {
     margin: 1rem 0px;
 }
@@ -247,27 +260,65 @@ body {
 }
 
 /* About Us Page Styling */
-.about-us-background-image {
-    /* background-image: linear-gradient(to top, black 0%, rgba(0,0,0,25%) 50%), url("https://raw.githubusercontent.com/kalakal-dev/bothy-blend/refs/heads/main/resources/images/whiskybarrels.jpeg"); */
+#about-us-background-image {
     background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 15%) 50%), url("/Users/Jack/Repositories/Web/bothy-blend/bothy-blend/resources/images/landscape_filter.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
+}
 
-    position: absolute;
-    z-index: -100;
+#about-us-main-content {
+    width: 100vw;
 }
 
 /* Order Page Styling */
-.order-background-image {
-    /* background-image: linear-gradient(to top, black 0%, rgba(0,0,0,25%) 50%), url("https://raw.githubusercontent.com/kalakal-dev/bothy-blend/refs/heads/main/resources/images/whiskybarrels.jpeg"); */
-    background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 15%) 50%), url("/Users/Jack/Repositories/Web/bothy-blend/bothy-blend/resources/images/landscape_filter.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
+#order-background-image {
+    background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 25%) 50%), url("/Users/Jack/Repositories/Web/bothy-blend/bothy-blend/resources/images/coppertanks.jpg");
+}
 
-    position: absolute;
-    z-index: -100;
+#order-main-content {
+    width: 100vw;
+}
+
+.order-box-container {
+    background-color: var(--transparent-box-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    text-align: center;
+
+    border: medium solid var(--main-text-color);
+    border-radius: 25px;
+
+    margin: 0px 10px 20px 10px;
+    padding: 10px;
+}
+
+.order-box-container h2 {
+    font-family: var(--logo-font);
+    font-size: 40px;
+    
+    margin: 10px;
+}
+
+.order-box-container h3 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.order-box-container p {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.order-box-container img.package-image {
+    width: 240px;
+    height: 240px;
+
+    margin: 10px 10px;
+}
+
+.payment-method-container {
+    /* border: thin solid red !important; */
 }
