@@ -32,13 +32,12 @@ body {
     width: 100%;
     position: fixed;
     top: 0%;
+    left: 0%;
     z-index: 1;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    /* visibility: hidden; */
 }
 
 .nav-header>* {
@@ -50,24 +49,61 @@ body {
 
     font-family: var(--logo-font);
     font-size: 46px;
+    text-decoration: none;
+
+    /* width: 50%; */
+
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+.nav-header-logo-text:visited {
+    color: var(--main-text-color);
+
+    font-family: var(--logo-font);
+    font-size: 46px;
+    text-decoration: none;
 
     width: 50%;
-    /* padding: 5px; */
-    /* margin: 50px 15px; */
+}
 
-    /* border: thin solid red !important; */
+.nav-header-logo-text:hover {
+    color: grey;
+}
+
+.nav-header-logo-text:active {
+    color: darkslategrey;
 }
 
 .nav-header-list {
     display: flex;
 }
 
-.nav-header-list>li {
+.nav-header-list>li a {
+    color: var(--main-text-color);
     font-family: var(--main-body-font);
-    font-size: 18px;
+    font-size: 24px;
+    letter-spacing: 2px;
     text-transform: uppercase;
+    text-decoration: none;
 
-    margin: 5px;
+    margin: 8px;
+
+    cursor: pointer;
+}
+
+.nav-header-list>li a:visited {
+    color: var(--main-text-color);
+}
+
+.nav-header-list>li a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+.nav-header-list>li a:active {
+    color: darkslategrey;
+    text-decoration: underline;
 }
 
 /* Button Styles */
