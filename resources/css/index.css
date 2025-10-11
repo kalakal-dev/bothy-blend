@@ -47,8 +47,9 @@ body {
     font-size: 46px;
     text-decoration: none;
 
-    margin: 10px;
+    margin: 10px 0px 10px 10px;
     min-width: 40%;
+    max-width: 50%;
 
     transition: color 0.2s;
     cursor: pointer;
@@ -76,11 +77,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    /* min-width: 60%; */
+
+    margin-right: 5px;
 }
 
 .nav-header-list>li {
-    margin: 10px;
+    margin: 10px 5px;
 }
 
 .nav-header-list>li a {
@@ -90,8 +92,6 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     text-decoration: none;
-
-    /* margin: 10px; */
 
     cursor: pointer;
 }
