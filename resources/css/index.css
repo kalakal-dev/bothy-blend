@@ -149,6 +149,12 @@ body {
     z-index: -100;
 }
 
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .page-main-title {
     margin: 12px 0px;
 }
@@ -157,7 +163,7 @@ body {
     color: var(--main-text-color);
 
     font-family: var(--subtitle-font);
-    font-size: 40px;
+    font-size: 50px;
     text-transform: uppercase;
     text-align: center;
 }
@@ -175,7 +181,9 @@ body {
     justify-content: flex-start;
     align-items: center;
 
+    max-width: 900px;
     min-height: 450px;
+
     margin: 24px 24px 0px 24px;
     padding: 30px;
 }
@@ -261,7 +269,7 @@ body {
 
 /* About Us Page Styling */
 #about-us-background-image {
-    background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 15%) 50%), url("/Users/Jack/Repositories/Web/bothy-blend/bothy-blend/resources/images/landscape_filter.jpg");
+    background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 15%) 50%), url("https://raw.githubusercontent.com/kalakal-dev/bothy-blend/refs/heads/main/resources/images/landscape_filter.jpg");
 }
 
 #about-us-main-content {
@@ -270,7 +278,7 @@ body {
 
 /* Order Page Styling */
 #order-background-image {
-    background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 25%) 50%), url("/Users/Jack/Repositories/Web/bothy-blend/bothy-blend/resources/images/coppertanks.jpg");
+    background-image: linear-gradient(to top, black 0%, rgba(0, 0, 0, 25%) 50%), url("https://raw.githubusercontent.com/kalakal-dev/bothy-blend/refs/heads/main/resources/images/coppertanks.jpg");
 }
 
 #order-main-content {
@@ -290,15 +298,15 @@ body {
     border: medium solid var(--main-text-color);
     border-radius: 25px;
 
-    margin: 0px 10px 20px 10px;
     padding: 10px;
+    margin-bottom: 25px;
 }
 
 .order-box-container h2 {
     font-family: var(--logo-font);
-    font-size: 40px;
-    
-    margin: 10px;
+    font-size: 36px;
+
+    margin: 10px 0px;
 }
 
 .order-box-container h3 {
@@ -312,13 +320,47 @@ body {
     margin: 0px;
 }
 
-.order-box-container img.package-image {
-    width: 240px;
-    height: 240px;
+.order-box-container a {
+    box-sizing: content-box;
 
-    margin: 10px 10px;
+    background-color: orange;
+    color: black;
+    
+    margin: 10px 0px;
+    padding: 0px 15px;
+
+    border: medium solid var(--main-text-color);
+    border-radius: 25px;
+
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    cursor: pointer;
+    transition: background-color 0.1s;
 }
 
-.payment-method-container {
-    /* border: thin solid red !important; */
+.order-box-container a:visited {
+
+}
+
+.order-box-container a:hover {
+    background-color: orangered;
+
+    text-decoration: underline;
+}
+
+.order-box-container a:active {
+    background-color: darkgoldenrod;
+    color: white;
+
+    border: medium solid rgba(0, 0, 0, 0%);
+
+    text-decoration: none;
+}
+
+.order-box-container img.package-image {
+    width: 220px;
+    height: 220px;
 }
