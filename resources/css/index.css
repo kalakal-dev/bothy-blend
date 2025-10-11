@@ -4,6 +4,7 @@
     --main-text-color: #E8DADA;
     --transparent-box-color: rgba(0, 0, 0, 75%);
     --light-transparent-box-color: rgba(0, 0, 0, 60%);
+    --very-light-transparent-box-color: rgba(0, 0, 0, 25%);
 
     --logo-font: 'Tilt Prism', serif;
     --main-body-font: 'Federo', serif;
@@ -45,6 +46,7 @@ body {
 
     font-family: var(--logo-font);
     font-size: 46px;
+    text-transform: uppercase;
     text-decoration: none;
 
     margin: 10px 0px 10px 10px;
@@ -112,7 +114,7 @@ body {
 
 /* Button Styles */
 .order-button {
-    background-color: rgba(0, 0, 0, 0%);
+    background-color: var(--very-light-transparent-box-color);
     color: var(--main-text-color);
 
     font-family: var(--main-body-font);
@@ -146,7 +148,7 @@ body {
 }
 
 .link-button {
-    background-color: rgba(0, 0, 0, 0%);
+    background-color: var(--very-light-transparent-box-color);
     color: var(--main-text-color);
 
     font-family: var(--main-body-font);
@@ -225,6 +227,7 @@ body#order::before {
 
     font-family: var(--subtitle-font);
     font-size: 50px;
+    font-style: italic;
     text-transform: uppercase;
     text-align: center;
 }
@@ -355,7 +358,8 @@ body#order::before {
 
 .order-box-container h2 {
     font-family: var(--logo-font);
-    font-size: 36px;
+    font-size: 32px;
+    text-transform: uppercase;
 
     margin: 10px 0px;
 }
