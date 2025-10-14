@@ -181,6 +181,14 @@ body {
     border: thin solid var(--background-color);
 }
 
+/* Embedded Video Styles */
+iframe {
+    aspect-ratio: 16 / 9;
+    width: 100% !important;
+
+    margin-bottom: 25px;
+}
+
 /* Generic Page Styles */
 
 /* Page Fixed Background Implementation
