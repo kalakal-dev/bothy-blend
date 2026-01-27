@@ -470,8 +470,20 @@ body#order::before {
 }
 
 /* VAT Number Styling */
-.VAT-number {
+.VAT-number-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.VAT-number-container p {
     font-size: 12px;
+    line-height: 12px;
     text-transform: uppercase;
     text-align: center;
+
+    margin: 0px;
+    padding: 4px 0px;
 }
