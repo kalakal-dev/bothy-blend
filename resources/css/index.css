@@ -468,3 +468,10 @@ body#order::before {
 
     border-radius: 15px;
 }
+
+/* VAT Number Styling */
+.VAT-number {
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+}
