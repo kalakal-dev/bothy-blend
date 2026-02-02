@@ -408,9 +408,7 @@ body#order::before {
 .order-box-container {
     background-color: var(--transparent-box-color);
 
-    display: none;
-
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
